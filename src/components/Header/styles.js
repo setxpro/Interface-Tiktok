@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { TiCloudStorage } from 'react-icons/ti';
+
 
 export const Container = styled.div`
     width: 100%;
@@ -34,9 +36,13 @@ export const OptionsContainer = styled.div`
     display: flex;
     align-items: center;
 `;
-export const Icon = styled.img`
-    width: 37px;
-    height: 37px;
+export const Icon = styled(TiCloudStorage)`
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 1s ease;
+    &:hover {
+        color: ${(props) => props.theme.colors.primary};
+    }
 `;
 export const Avatar = styled.img`
     width: 50px;
