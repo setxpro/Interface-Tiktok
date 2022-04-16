@@ -62,7 +62,7 @@ export const InfoContainer = styled.div`
 
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.3rem;
 `;
 export const Links = styled.div`
     margin-bottom: ${(props) => props.margin ? '8px' : '0px'};
