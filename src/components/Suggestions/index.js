@@ -1,16 +1,16 @@
 import React from 'react';
 import Button from '../Button';
-import RecommendCard from '../RecommendCard';
 import User from '../User';
+import RecommendCard from '../RecommendCard';
 
 import * as C from './styles';
+import { items, people } from '../../db';
 
 function Suggestions() {
   return (
       <C.Container>
           <C.IconsContainer>
                 <C.FacebookIcon/>
-                <C.InstagramIcon/>
                 <C.WhatsAppIcon/>
                 <C.TwitterIcon/>
                 <C.DribbbleIcon/>
@@ -18,10 +18,12 @@ function Suggestions() {
           <C.BoxContainer>
             <C.BoxHeader><span>Contas Sugeridas</span></C.BoxHeader>
                 <C.ItemContainer>
-                    {people.map((person, indice) => (
+                    {people.map((person, index) => (
                         <C.Item>
-                            <User key={indice} user={person}/>
-                            <Button outlined fontSize={14}>Seguir</Button>
+                            <User key={index} name={person.name} avatar={person.avatar} userName={person.userName}/>
+                            <C.ButtonContainer>
+                                <Button outlined fontSize={14}>Seguir</Button>
+                            </C.ButtonContainer>
                         </C.Item>
                     ))}
                 </C.ItemContainer>
@@ -32,7 +34,7 @@ function Suggestions() {
                     {items.map((item, indice) => (
                         <C.Item>
                             <RecommendCard key={indice} recommend={item} />
-                            {/* <ArrowIcon></ArrowIcon> */}
+                            <C.ArrowRightIcon/>
                         </C.Item>
                     ))}
                 </C.ItemContainer>

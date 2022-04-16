@@ -2,13 +2,13 @@ import React from 'react';
 
 import * as C from './styles';
 
-function User(props) {
+function User(user) {
   return (
     <C.Container>
-      <C.Avatar src={props.avatar} alt="avatar"/>
+      <C.Avatar src={user.avatar} alt="avatar"/>
       <C.Info>
-        <a>{props.name}</a>
-        <span>{props.userName}</span>
+        <a>{user.name}</a>
+        <span>{user.userName}</span>
       </C.Info>
     </C.Container>
   );
