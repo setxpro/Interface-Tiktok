@@ -20,7 +20,7 @@ function Suggestions() {
                 <C.ItemContainer>
                     {people.map((person, index) => (
                         <C.Item>
-                            <User key={index} name={person.name} avatar={person.avatar} userName={person.userName}/>
+                            <User key={index} name={person.name} avatar={person.avatar} userName={person.userName} followers={person.followers}/>
                             <C.ButtonContainer>
                                 <Button outlined fontSize={14}>Seguir</Button>
                             </C.ButtonContainer>

@@ -80,9 +80,20 @@ export const Song = styled.div`
       font-weight: 100;
       cursor: pointer;
       
+      animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+      
       :hover {
         text-decoration: underline;
       }
+        
+            @keyframes fade-in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+        }
     }
 
 `;

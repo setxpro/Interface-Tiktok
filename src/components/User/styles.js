@@ -34,3 +34,13 @@ export const Info = styled.div`
         color: rgba(22, 24, 35, 0.5);
     }
 `;
+
+export const ContainerAvatarVerify = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+`;

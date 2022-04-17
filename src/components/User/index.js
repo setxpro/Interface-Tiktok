@@ -7,7 +7,10 @@ function User(user) {
     <C.Container>
       <C.Avatar src={user.avatar} alt="avatar"/>
       <C.Info>
-        <a>{user.name}</a>
+        <C.ContainerAvatarVerify>
+          <a>{user.name}</a> {user.followers >=100000 ? <img src="https://cdn.discordapp.com/emojis/719656773400789108.webp?size=96&quality=lossless" alt='verify'/> : ''}
+            
+          </C.ContainerAvatarVerify>
         <span>{user.userName}</span>
       </C.Info>
     </C.Container>

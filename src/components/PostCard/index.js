@@ -31,7 +31,7 @@ function PostCard({post}) {
                     <C.Description>
                       <span>{post?.description}</span>
                       {post?.tags.map((tag, indice) => (
-                        <C.Tag key={indice}>{tag.title}</C.Tag>
+                        <C.Tag key={indice}>#{tag.title}</C.Tag>
                       ))}
                     </C.Description>
                 </C.Info>
