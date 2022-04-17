@@ -1,15 +1,11 @@
 
 ## Getting Started
 
-_Clone UI Tiktok with nextJs_ 
+_Clone UI Tiktok with nextJs_ <br>
+_implement database MongoDB_
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
-
-- create cluster in MongoDB Atlas
-- after
-    - npm install mongodb
-- config connection
