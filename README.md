@@ -1,8 +1,4 @@
-
-## Getting Started
-
-_Clone UI Tiktok with nextJs_ <br>
-_implement database MongoDB_
+# _Clone UI Tiktok with nextJs_ <br>
 
 
 ```bash
